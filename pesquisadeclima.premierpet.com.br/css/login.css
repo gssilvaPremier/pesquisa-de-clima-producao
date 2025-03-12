@@ -1,0 +1,102 @@
+h2, p, button, h4, input, div, h3, td, select, textarea {
+	font-family: Tahoma !important;
+	font-size: 12px !important;
+}
+h2, h3, h4 {
+	font-weight: bold !important;
+	font-size: 18px !important;
+}
+
+.pesquisa_especifique{
+	display: none;
+  }
+
+body {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #EBEBEB;
+}
+.form-signin {
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox {
+	margin-bottom: 10px;
+}
+.form-signin .checkbox {
+	font-weight: normal;
+}
+.form-signin .form-control {
+	position: relative;
+	height: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 16px;
+}
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+.form-signin input[type="text"] {
+	margin-bottom: -1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+	margin-bottom: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.sucesso {
+	display: none;
+}
+
+label {
+	color: #0099CC !important;
+	font-weight: 100 !important;
+	font-size: 12px;
+}
+
+body {
+	background-color: #EEEEEE !important;
+}
+
+.navbar{
+	border-bottom: 1px solid #CCCCCC !important;
+	box-shadow: #CCCCCC .1em .1em .3em;
+}
+
+.panel table {
+	box-shadow: #cccccc .1em .1em .6em;
+	border-right: 1px  solid #CCCCCC !important;
+	border-bottom: 1px  solid #CCCCCC !important;
+	border-radius: 10px !important;
+}
+
+.panel table thead tr td {
+	background-color: transparent !important;
+}
+
+
+.panel>.table:first-child>thead:first-child>tr:first-child td:first-child {
+	box-shadow: #EBEBEB .2em .2em .4em !important;
+}
+
+.panel {
+	padding: 10px;
+	background-color: transparent !important;
+	border: 0px !important;
+	-webkit-box-shadow:  none !important;
+    box-shadow: none !important;
+}
+
+button{
+	box-shadow: #cccccc .1em .1em .3em !important;
+}
+.breadcrumb {
+	margin-bottom: 0 !important;
+	box-shadow: #CCCCCC .1em .1em .3em;
+}
