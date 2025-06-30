@@ -4,7 +4,7 @@ services:
   web_v2:
     build: .
     ports:
-      - "8002:80"  # Porta diferente
+      - "8002:80" 
     volumes:
       - .:/var/www/html
     depends_on:
@@ -30,7 +30,7 @@ services:
     ports:
       - "8082:80"
     volumes:
-      - ./php.ini:/usr/local/etc/php/conf.d/php-custom.ini  # <- Aqui está o que importa
+      - ./php.ini:/usr/local/etc/php/conf.d/php-custom.ini  
     depends_on:
       - db_v2
 
