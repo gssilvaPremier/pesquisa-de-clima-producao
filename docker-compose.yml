@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  web_v2:
+    build: .
+    ports:
+      - "8002:80"  # Porta diferente
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - db_v2
+
+  db_v2:
+    image: mysql:8.0
+    volumes:
+      - db_data_v2:/var/lib/mysql
+      - ./init:/docker-entrypoint-initdb.d  
+      - ./php.ini:/usr/local/etc/php/conf.d/php.ini  
+    environment:
+      MYSQL_ROOT_PASSWORD: ypbF[ywZIrE!
+      MYSQL_DATABASE: premierpet_spc_v2  
+      MYSQL_USER: premierpet_spc2023_v2
+      MYSQL_PASSWORD: ypbF[ywZIrE!
+
+  phpmyadmin_v2:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: db_v2
+      MYSQL_ROOT_PASSWORD: ypbF[ywZIrE!
+    ports:
+      - "8082:80"
+    volumes:
+      - ./php.ini:/usr/local/etc/php/conf.d/php-custom.ini  # <- Aqui está o que importa
+    depends_on:
+      - db_v2
+
+volumes:
+  db_data_v2:
